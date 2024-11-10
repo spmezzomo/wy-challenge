@@ -1,6 +1,6 @@
 # WY Challenge Project
 
-A maquete em figma pode ser encontrada neste [aqui](https://we.tl/t-4A7hZBmO02): 
+A maquete em figma pode ser encontrada [aqui](https://we.tl/t-4A7hZBmO02): 
 
 ## Descrição Geral da Aplicação:
 
@@ -11,11 +11,13 @@ Esta aplicação foi desenvolvida em WordPress com um tema personalizado, constr
 - Tailwind CSS como framework para estilização;
 - Yarn para compilar e gerir os assets do tema;
 - Splide.js para o slideshow da galeria de imagens;
-- ACF (Advanced Custom Fields) para a criação dos campos personalizados e do tipo de post "Eventos".
+- ACF (Advanced Custom Fields) para a criação dos _custom fields_ das páginas e posts e do _custom post type_ "Event".
 
 ## Funcionalidades Principais:
-O tema permite que o utilizador personalize todo o conteúdo do website. 
-Abaixo estão as principais funcionalidades:
+O tema permite que o utilizador personalize todo o conteúdo do website.
+
+
+## Principais funcionalidades:
 
 ### Homepage:
 - __Hero__: Exibe o título e conteúdo da página. A imagem de destaque da página é usada como background desta secção.
@@ -53,7 +55,7 @@ Abaixo estão as principais funcionalidades:
    ```
 8. Compilar os assets do tema:
 ```sh
-   yarn yarn build
+   yarn build
    ```
 
 ## Credenciais de Acesso ao Admin:
