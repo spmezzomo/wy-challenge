@@ -35,7 +35,7 @@ Através da Homepage e do menu, o utilizador pode aceder aos eventos e à págin
 
 1. Clonar o projeto a partir do GitHub:
    ```sh
-   Clonar o projeto a partir do GitHub: git clone https://github.com/spmezzomo/wy-challenge
+   git clone https://github.com/spmezzomo/wy-challenge
    ```
 2. Criar uma base de dados em seu servidor
 3. Importar a base de dados que se encontra na pasta /sql para a base de dados criada
