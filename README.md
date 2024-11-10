@@ -14,21 +14,18 @@ Esta aplicação foi desenvolvida em WordPress com um tema personalizado, constr
 - ACF (Advanced Custom Fields) para a criação dos _custom fields_ das páginas e posts e do _custom post type_ "Event".
 
 ## Funcionalidades Principais:
-O tema permite que o utilizador personalize todo o conteúdo do website.
-
-
-## Principais funcionalidades:
+O tema permite que o utilizador personalize todo o conteúdo do website através do backoffice, nomeadamente, páginas, artigos, eventos e galeria de imagens.
 
 ### Homepage:
 - __Hero__: Exibe o título e conteúdo da página. A imagem de destaque da página é usada como background desta secção.
-- __Galeria__: Um slideshow mostra as imagens inseridas na tab "_Image Slideshow_" localizada no custom field "HP". Podem ser adicionadas várias imagens horizontais que respeitem a proporção 307:196.
-- __Listagem de Posts__: Este bloco, com título predefinido "Blog", permite personalização do título e descrição através da tab "_Posts Highlights Block_". Nesta tab, o utilizador também pode selecionar até 6 posts para exibição.
+- __Galeria__: Um slideshow mostra as imagens inseridas na tab "_Image Slideshow_" localizada no custom field "HP". Podem ser adicionadas várias imagens horizontais que respeitem a proporção 307:196. Estes bloco possui um efeito de _slide up_ vinculado ao scroll da página
+- __Listagem de Posts__: Este bloco, com título predefinido "Blog", permite personalização do título e descrição através da tab "_Posts Highlights Block_". Nesta tab, o utilizador também pode selecionar até 6 posts para exibição. Os posts são exibidos de forma desencontrada, com um pequeno efeit de _scale_ ao fazer _hover_ à imagem de cada elemento
 - Através da Homepage e do menu, o utilizador pode aceder aos *eventos* e à *página de pesquisa*
 
 ### Páginas Secundárias:
-- __Eventos__: Exibe uma lista dos eventos ordenados por data do evento, a partir do mais recente. Estes eventos podem ser editados no post type "Eventos" no menu lateral do backoffice.
-- __Blog__: Página com todos os posts também listados na homepage.
-- __Pesquisa__: Inclui um formulário de pesquisa e exibe uma lista de posts/páginas do site.
+- __Eventos__: Exibe uma lista dos eventos ordenados pela data do evento a partir do mais recente. Estes eventos podem ser editados no post type "Event" no menu lateral do backoffice. São exibidos 6 eventos por página
+- __Blog__: Página com todos os posts também listados na homepage, nesta página pode-se ver todos os posts que estiverem publicados, exibindo 6 por página
+- __Pesquisa__: Inclui um formulário de pesquisa e exibe uma lista de posts/páginas do site e resultado da pesquisa, quando realizda
 - __404__: Página de erro "Página Não Encontrada" com um formulário de pesquisa.
 
 
