@@ -30,19 +30,32 @@ Através da Homepage e do menu, o utilizador pode aceder aos eventos e à págin
 
 
 # Passos de Instalação
-- Clonar o projeto a partir do GitHub: git clone https://github.com/spmezzomo/wy-challenge
-- Criar uma base de dados em seu servidor.
-- Importar a base de dados que se encontra na pasta /sql para a base de dados criada.
-- Realizar uma migração de URL caso a URL do projeto seja diferente de wy.test, utilizando a url "sua_url/migrate.php" (este script não deve ser mantido no projeto após sua utilização por questões de segurança)
-- Aceda à pasta do tema e execute o comando abaixo para instalar as dependências PHP:
 
- -- composer install
- -- Utilizar a versão correta do Node:nvm use 21
- -- Instale as dependências do tema: yarn install
- -- Compile os assets do tema: yarn build
-
+1. Clonar o projeto a partir do GitHub:
+   ```sh
+   Clonar o projeto a partir do GitHub: git clone https://github.com/spmezzomo/wy-challenge
+   ```
+2. Criar uma base de dados em seu servidor
+3. Importar a base de dados que se encontra na pasta /sql para a base de dados criada
+4. Realizar uma migração de URL caso a URL do projeto seja diferente de wy.test, utilizando a url "sua_url/migrate.php" (este script não deve ser mantido no projeto após sua utilização por questões de segurança)
+5. Aceda à pasta do tema e execute o comando abaixo para instalar as dependências PHP:
+   ```sh
+   composer install
+   ```
+6. Utilizar a versão correta do Node:
+   ```sh
+   nvm use 21
+   ```
+7. Instale as dependências do tema:
+   ```sh
+   yarn install
+   ```
+8. Compile os assets do tema:
+```sh
+   yarn yarn build
+   ```
 
 # Credenciais de Acesso ao Admin:
 
-Utilizador: admin
-Senha: $UP3RstrongP4$$w0rd
+- Utilizador: admin
+- Senha: $UP3RstrongP4$$w0rd
