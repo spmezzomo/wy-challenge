@@ -51,7 +51,7 @@ O tema permite que o utilizador personalize todo o conteúdo do website através
    yarn install
    ```
 8. Compilar os assets do tema:
-```sh
+   ```sh
    yarn build
    ```
 
