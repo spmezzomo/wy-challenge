@@ -7,8 +7,8 @@ use Roots\Acorn\View\Composer;
 class PostList extends Composer
 {
     protected static $views = [
-        'archive-posts',  // Especifique o template onde essa query será usada
-        'partials.content-archive',  // Exemplo de parcial para conteúdo de archive
+        'archive-posts',
+        'partials.content-archive',
     ];
 
     public function with()
@@ -20,10 +20,9 @@ class PostList extends Composer
 
     protected function posts()
     {
-        // Define sua query personalizada
         $args = [
-            'post_type' => 'post',  // ou um custom post type se necessário
-            'posts_per_page' => 6, // Número de posts por página
+            'post_type' => 'post',
+            'posts_per_page' => 6,
             'paged' => get_query_var('paged', 1),
         ];
 

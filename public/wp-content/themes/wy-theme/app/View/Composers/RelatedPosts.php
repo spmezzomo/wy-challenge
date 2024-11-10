@@ -7,8 +7,7 @@ use Roots\Acorn\View\Composer;
 class RelatedPosts extends Composer
 {
     protected static $views = [
-        'single',  // Template de single post
-        'partials.content-single',  // Exemplo de parcial para conteúdo de single post
+        'single',
     ];
 
     public function with()
@@ -27,10 +26,10 @@ class RelatedPosts extends Composer
 
         $args = [
             'post_type' => 'post',
-            'posts_per_page' => 3,  // Define o número de posts relacionados
+            'posts_per_page' => 3,
             'post__not_in' => [get_the_ID()],
             'category__in' => $categories,
-            'orderby' => 'rand',  // Exibe posts de forma aleatória
+            'orderby' => 'rand',
         ];
 
         $related_query = new \WP_Query($args);

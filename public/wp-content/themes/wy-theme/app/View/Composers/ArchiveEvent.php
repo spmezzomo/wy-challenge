@@ -7,9 +7,8 @@ use WP_Query;
 
 class ArchiveEvent extends Composer
 {
-    // Especifique a view para a qual esse Composer é aplicado
     protected static $views = [
-        'archive-event',  // Para archive-event.blade.php
+        'archive-event',
     ];
 
     public function with()
@@ -21,11 +20,14 @@ class ArchiveEvent extends Composer
 
     protected function getEventPosts()
     {
-        // Configura a query para o post type 'event'
+        // Events ordered by acf date
         return new WP_Query([
             'post_type'      => 'event',
-            'posts_per_page' => 5,       // Defina o número de posts por página
+            'posts_per_page' => 6,
             'paged'          => max(1, get_query_var('paged')),
+            'meta_key'       => 'begin_event_date',
+            'orderby'        => 'meta_value',
+            'order'          => 'ASC'
         ]);
     }
 }
