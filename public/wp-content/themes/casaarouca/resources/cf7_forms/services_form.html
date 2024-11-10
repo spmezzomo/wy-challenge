@@ -1,0 +1,23 @@
+<div class="lg:flex gap-x-16">
+<fieldset class="lg:w-1/2 text-left">
+<label> Nome*
+    [text* your-name autocomplete:name placeholder "Escreva o seu nome"] </label>
+<label class="relative"> Telefone*
+<select class="country-code" name="country-code"></select>[tel* phone]</label>
+
+<label> Email*
+    [email* your-email autocomplete:email placeholder "Escreva o seu email"] </label>
+
+<label> Número da Reserva*
+    [text* reservation placeholder "Escreva o número da sua reserva"]</label>
+</fieldset>
+<fieldset class="lg:w-1/2 text-left">
+<label class="mb-2.5"> Assunto*</label>
+<div class="select">
+<span class="toggle-select text-sm font-bold">Selecionar Serviço</span>[checkbox* servicos use_label_element "Experience advisor" "Pequeno-Almoço" "Transfer" "Limpeza e Lavandaria" "Rent a Car"] 
+</div>
+<label>Mensagem*
+    [textarea* your-message placeholder "Escreva a sua mensagem"]</label>
+</fieldset>
+</div>
+<p class="flex flex-col items-center">[submit class:btn class:btn-green class:mt-10 "Enviar"]</p>

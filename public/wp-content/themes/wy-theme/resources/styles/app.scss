@@ -1,0 +1,266 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "@splidejs/splide/css";
+
+/**
+ * Fonts
+ */
+.raleway-normal {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-semibold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.mulish-thin {
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.mulish-normal {
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.mulish-normal-italic {
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+html,
+body {
+	@apply mulish-thin antialiased text-sky-950;
+}
+
+/**
+ * Remove space on bottom caused by scrollup effect in HP
+ */
+.home {
+	#app {
+		@apply relative;
+
+		footer {
+			@apply lg:absolute bottom-0 w-full;
+		}
+	}
+}
+
+
+.container {
+	@apply px-6 lg:px-0 //add padding to all container
+}
+
+/**
+ * Page Main Header
+ */
+header {
+	&.banner {
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.50) 100%);
+
+		nav {
+			.nav {
+				li {
+					@apply p-3;
+
+					// seach icon
+					&.search {
+						background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none"><path d="M21.9082 22L16.724 16.8158M19.4376 10.2647C19.4376 5.14795 15.2897 1 10.1729 1C5.05615 1 0.908203 5.14795 0.908203 10.2647C0.908203 15.3815 5.05615 19.5294 10.1729 19.5294C15.2897 19.5294 19.4376 15.3815 19.4376 10.2647Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg>') center right / 20px no-repeat;
+						@apply lg:pr-7 pr-5;
+
+						@media only screen and (max-width: 1024px) {
+							background-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/**
+ * HP Hero section
+ */
+.hero{
+	background-image: var(--bg);
+	@apply bg-cover bg-no-repeat bg-center overflow-hidden;
+
+	#hero-content {
+		top: 0;
+		@apply relative transition-all duration-700;
+
+		.page-title {
+			@apply lg:text-9xl text-7xl transition-all duration-700;
+		}
+
+		//HP Slideup effect on hero text
+		&.slideup {
+			@apply lg:-top-80;
+
+			.page-title {
+				@apply text-7xl;
+			}
+		}
+	}
+}
+
+#page-content {
+	top: 0;
+	@apply relative transition-all duration-700;
+
+	/**
+	 * HP Slideup effect on slideshow
+	 */
+	&.slideup {
+		@apply lg:-top-80;
+	}
+}
+
+/**
+ * HP Slideshow
+ */
+#slideshow-hp {
+	.splide__arrow {
+		@apply bg-transparent;
+
+		svg {
+			@apply fill-sky-950;
+		}
+	}
+
+	.splide__arrow--prev {
+		@apply -left-5;
+	}
+
+	.splide__arrow--next {
+		@apply -right-5;
+	}
+
+	.splide__pagination {
+		@apply -bottom-6;
+
+		.splide__pagination__page {
+			@apply bg-sky-950 opacity-50;
+
+			&.is-active {
+				@apply bg-sky-950 opacity-100;
+			}
+		}
+	}
+}
+
+/**
+ * Single page template
+ */
+.single {
+	p {
+		@apply mb-3;
+	}
+
+	article {
+		min-height: calc(100svh - 100px); //keep footer at the bottom if the content is to small
+		background-image: var(--bg); //use a variable to define an image coming from backoffice
+		@apply bg-cover bg-no-repeat bg-center overflow-hidden;
+	}
+}
+
+/**
+ * Archive Events page
+ */
+.archive {
+	article {
+		.description {
+			a {
+				@apply mulish-normal-italic text-sm;
+			}
+		}
+	}
+}
+
+/**
+ * General pagination
+ */
+.pagination {
+	.page-numbers {
+		@apply flex justify-center;
+
+		li {
+			@apply px-2;
+
+			.current {
+				@apply raleway-semibold;
+			}
+
+			.prev, 
+			.next {
+				@apply mulish-normal-italic text-sm;
+			}
+		}
+	}
+}
+
+/**
+ * Search page
+ */
+.search {
+	.search-content {
+		min-height: calc(100svh - 364px); //keep footer at the bottom if the content is to small
+	}
+
+	.entry-summary {
+		a {
+			@apply mulish-normal-italic text-sm;
+		}
+	}
+
+	.navigation {
+		&.posts-navigation {
+			@apply py-10;
+		}
+
+		.nav-links {
+			@apply flex justify-between mulish-normal-italic;
+		}
+	}
+}
+
+.page-404 {
+	min-height: calc(100svh - 355px); //keep footer at the bottom if the content is to small
+}
+
+/**
+ * General classes
+ */
+.background-blur {
+    background: linear-gradient(240deg, rgba(255, 252, 252, 0.33) 2%, rgba(255, 255, 255, 0.38) 95%);
+}
+
+.box-shadow-inner {
+	box-shadow:0px -15px 8px 0px white inset;
+}
+
+.border-blur {
+	box-shadow:0px 0px 10px 10px #ffffff9e
+}

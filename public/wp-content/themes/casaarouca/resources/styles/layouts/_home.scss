@@ -1,0 +1,39 @@
+.homepage {
+	background-image: var(--bg);
+	@apply bg-cover bg-no-repeat bg-center overflow-hidden;
+
+	.bg-active {
+		background-image: var(--bg);
+		@apply bg-cover bg-no-repeat bg-center opacity-0 transition-opacity duration-500;
+
+		&.active {
+			@apply opacity-100;
+		}
+	}
+
+	.card {
+		background: rgba(123, 123, 87, .9);
+		backdrop-filter: blur(4px);
+		@apply text-center font-light lg:text-base text-xs;
+
+		&.active {
+			box-shadow: 12px 18px 4px 0px rgba(0, 0, 0, 0.50);
+
+			.plus {
+				@apply hidden;
+			}
+
+			.body {
+				@apply opacity-100 h-auto;
+			}
+		}
+
+		&.disabled {
+			background: rgba(123, 123, 87, 0.3);
+		}
+
+		h3 {
+			@apply lg:text-lg text-xs uppercase font-normal pb-3;
+		}
+	}
+}
