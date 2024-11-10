@@ -1,6 +1,8 @@
-# wy-challenge-project
+# WY Challenge Project
 
-Descrição Geral da Aplicação:
+A maquete em figma pode ser encontrada neste link: https://we.tl/t-4A7hZBmO02
+
+# Descrição Geral da Aplicação:
 
 Esta aplicação foi desenvolvida em WordPress com um tema personalizado, construído a partir do tema-base Sage (desenvolvido pela Roots), que funciona como um "boilerplate" para otimizar e organizar o desenvolvimento de temas no WordPress.
 
