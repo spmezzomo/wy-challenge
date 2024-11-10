@@ -7,11 +7,11 @@ A maquete em figma pode ser encontrada [aqui](https://we.tl/t-4A7hZBmO02):
 Esta aplicação foi desenvolvida em WordPress com um tema personalizado, construído a partir do "_starter theme_" Sage (desenvolvido pela Roots), que funciona como um "_boilerplate_" para otimizar e organizar o desenvolvimento de temas no WordPress.
 
 ## Tecnologias Utilizadas:
-- Blade para a criação das templates;
-- Tailwind CSS como framework para estilização;
-- Yarn para compilar e gerir os assets do tema;
-- Splide.js para o slideshow da galeria de imagens;
-- ACF (Advanced Custom Fields) para a criação dos _custom fields_ das páginas e posts e do _custom post type_ "Event".
+- **Blade** para a criação das templates;
+- **Tailwind CSS** como framework para estilização;
+- **Yarn** para compilar e gerir os assets do tema;
+- **Splide.js** (plugin javascript) para o slideshow da galeria de imagens;
+- **ACF (Advanced Custom Fields)** para a criação dos _custom fields_ das páginas e posts e do _custom post type_ "Event".
 
 ## Funcionalidades Principais:
 O tema permite que o utilizador personalize todo o conteúdo do website através do backoffice, nomeadamente, páginas, artigos, eventos e galeria de imagens.
